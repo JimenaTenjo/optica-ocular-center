@@ -1,0 +1,59 @@
+{
+  "name": "proyectooptica/ocular-center",
+  "version": "0.0.1",
+  "type": "project",
+  "keywords": ["console", "tool", "example"],
+  "homepage": "https://google.com",
+  "time": "2019-10-28",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maria Suarez",
+      "email": "mriasr@gmail.com",
+      "homepage": "http://www.sena.edu.co",
+      "role": "Colaboradores"
+    },
+    {
+      "name": "Victor Fracica",
+      "email": "victorfracicag@gmail.com",
+      "homepage": "http://www.sena.edu.co",
+      "role": "Colaboradores"
+    },
+    {
+      "name": "Blanca Tibaduiza",
+      "email": "blanquita200104@gmail.com",
+      "homepage": "http://www.sena.edu.co",
+      "role": "Colaboradores"
+    },
+    {
+      "name": "Jimena Tenjo",
+      "email": "jimenatenjo42@gmail.com",
+      "homepage": "http://www.sena.edu.co",
+      "role": "Lider"
+    }
+  ],
+  "require":{
+    "php": ">=7.1.0",
+    "almasaeed2010/adminlte": "^3.0",
+    "vlucas/phpdotenv": "^3.6",
+    "dompdf/dompdf": "^1.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+
+  },
+  "scripts": {
+    "post-install-cmd": [
+    ],
+    "post-update-cmd": [
+    ]
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "extra": {
+
+  }
+}

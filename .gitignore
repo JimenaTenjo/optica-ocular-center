@@ -1,0 +1,6 @@
+/vendor/
+/composer.lock
+/.idea/
+/.idea/workspace.xml
+/.idea/optica-ocular-center.iml
+/.idea/php.xml
