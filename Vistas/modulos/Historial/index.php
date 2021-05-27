@@ -109,14 +109,6 @@ if (!empty($_GET["documento"]) && isset($_GET["documento"])){
                                 <td><?php echo $historial->getTelefonoAcudiente(); ?></td>
                                 <td>
                                     <a href="show.php?id=<?php echo $historial->getIdHistorial(); ?>" type="button" data-toggle="tooltip" title="Ver" class="btn docs-tooltip btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-                                    <a href="../../../App/Controlador/HistorialControlador.php?action=generarPdf&id=<?php echo $historial->getIdHistorial(); ?>"
-                                       type="button"
-                                       target="_blank"
-                                       data-toggle="tooltip"
-                                       title="Ver"
-                                       class="btn docs-tooltip btn-info btn-xs">
-                                        <i class="fa fa-file"></i>
-                                    </a>
                                 </td>
                             </tr>
                         <?php } }?>

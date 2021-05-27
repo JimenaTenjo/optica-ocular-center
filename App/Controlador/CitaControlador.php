@@ -32,17 +32,21 @@ class CitaControlador
     }
 
     static public function create(){
-        $arrayCita = array();
-        $arrayCita['fecha'] = $_POST['fecha'];
-        $arrayCita['hora'] = $_POST['hora'];
-        $arrayCita['estado'] = "Activo";
-        $arrayCita['motivo_consulta_id'] = $_POST['id_motivo_cita'];
-        $arrayCita['paciente_cita_id'] = $_POST['id_paciente_cita'];
-        $arrayCita['medico_cita_id'] = $_POST['id_medico_cita'];
+        try {
+            $arrayCita = array();
+            $arrayCita['fecha'] = $_POST['fecha'];
+            $arrayCita['hora'] = $_POST['hora'];
+            $arrayCita['estado'] = "Activo";
+            $arrayCita['motivo_consulta_id'] = $_POST['id_motivo_cita'];
+            $arrayCita['paciente_cita_id'] = $_POST['id_paciente_cita'];
+            $arrayCita['medico_cita_id'] = $_POST['id_medico_cita'];
 
-        $cita = new Cita($arrayCita);
-        var_dump($cita->create());
-        header("Location: ../../Vistas/modulos/Cita/index.php?respuesta=correcto");
+            $cita = new Cita($arrayCita);
+            var_dump($cita->create());
+            header("Location: ../../Vistas/modulos/Cita/index.php?respuesta=correcto");
+        }catch (Exception $e){
+            header("Location: ../../Vistas/modulos/cita/index.php?respuesta=error&mensaje=".$e->getMessage());
+        }
     }
 
 
@@ -118,7 +122,7 @@ class CitaControlador
     static public function buscarHorarioDisponible(){
         $date = date("Y-m-d H:i:s",strtotime( $_POST['fecha_cita']));
         $arrayHora=  Array();
-        $arrayCitas =Cita::search("SELECT * FROM optica.citas where fecha >='".$date."'");
+        $arrayCitas =Cita::search("SELECT * FROM optica.citas where fecha ='".$date."'");
         foreach ($arrayCitas as $cita){
             $arrayHora[]=$cita->getHora();
         }

@@ -209,7 +209,7 @@ require("../../partials/routes.php"); ?>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="direccion">Licencia</label>
+                                        <label for="direccion">Matrícula profesional</label>
                                         <input type="text" class="form-control" id="licencia" name="licencia" placeholder="Ingrese la licencian" >
                                     </div>
                                 </div>
