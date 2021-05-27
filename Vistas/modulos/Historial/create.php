@@ -274,7 +274,7 @@ use App\Modelo\Cita;
                             <div>
                                 <div class="form-group">
                                     <label for="id_prescripcion">Id prescripción</label>
-                                    <input type="text" class="form-control" id="id_prescripcion" name="prescripcion_historial_id"  readonly>
+                                    <input type="text" class="form-control" id="id_prescripcion" name="prescripcion_historial_id">
                                 </div>   
                             </div>
                         </div>
