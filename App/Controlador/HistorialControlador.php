@@ -49,7 +49,7 @@ class HistorialControlador
             $cita->setEstado('Inactivo');
             $cita->update();
 
-            header("Location: ../../Vistas/modulos/Historial/show.php?id=".$lastId."&respuesta=correcto&formula=1");
+            //header("Location: ../../Vistas/modulos/Historial/show.php?id=".$lastId."&respuesta=correcto&formula=1");
         } catch (Exception $e) {
             header("Location: ../../Vistas/modulos/Cita/create.php?respuesta=error&mensaje=" . $e->getMessage());
         }
