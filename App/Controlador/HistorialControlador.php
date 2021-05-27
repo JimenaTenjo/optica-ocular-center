@@ -40,7 +40,7 @@ class HistorialControlador
             $arrayHistorial['antecedentes'] = $_POST['antecedentes'];
             $arrayHistorial['nombre_acuediente'] = $_POST['nombre_acudiente'];
             $arrayHistorial['telefono_acudiente'] = $_POST['telefono_acudiente'];
-            $arrayHistorial['prescripcion_historial_id'] = $_POST['prescripcion_historial_id'];
+            $arrayHistorial['prescripcion_historial_id'] = $_POST['id_prescripcion'];
 
             $historial = new Historial($arrayHistorial);
             $lastId= $historial->create();
