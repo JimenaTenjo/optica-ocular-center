@@ -295,6 +295,7 @@ class Historial extends db_abstract_class
 
     public function create()
     {
+        print_r(  $this->prescripcion_historial_id->getIdPrescripcionFinal());
         $this->insertRow("INSERT INTO optica.historial VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", array(
                 $this->codigo_rips,
                 $this->conducta,
