@@ -219,7 +219,6 @@ use App\Modelo\Cita;
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="id_prescripcion" name="prescripcion_historial_id"  hidden>
                                         <label for="last_name">Anamnesis</label>
                                         <select class="form-control" name="anamnesis">
                                             <option value="" selected disabled> Seleccionar</option>
@@ -271,6 +270,12 @@ use App\Modelo\Cita;
                                         <textarea class="form-control" name="diagnostico" required placeholder="Ingrese el diagnostico"></textarea>
                                     </div>
                                 </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <label for="id_prescripcion">Id prescripción</label>
+                                    <input type="text" class="form-control" id="id_prescripcion" name="prescripcion_historial_id"  readonly>
+                                </div>   
                             </div>
                         </div>
                         <!-- /.card-body -->
