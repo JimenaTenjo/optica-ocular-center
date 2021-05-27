@@ -403,6 +403,7 @@ use App\Modelo\Cita;
 
         $('#examen_id').on('change', function() {
             $('.examenes').hide();
+            console.log(this.value);
             switch (this.value) {
                 case "1":
                     $('#agudeza_visual').show();
