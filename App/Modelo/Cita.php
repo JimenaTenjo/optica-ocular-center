@@ -241,8 +241,8 @@ class Cita extends db_abstract_class
                 $this->fecha,
                 $this->hora,
                 $this->estado,
-                $this->paciente_cita_id->getIdPaciente(),
                 $this->motivo_consulta_id->getIdMotivoConsulta(),
+                $this->paciente_cita_id->getIdPaciente(),
                 $this->medico_cita_id->getIdMedico(),
                 $this->idCita
             )
